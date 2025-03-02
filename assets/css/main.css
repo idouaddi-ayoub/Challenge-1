@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Warang+Citi&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Warang";
+    src: url("/fonts/Metropolis-Light.otf");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  body {
+    @apply font-body;
+  }
+
+  @layer base {
+    * {
+      @apply border-border;
+    }
+  }
+}
